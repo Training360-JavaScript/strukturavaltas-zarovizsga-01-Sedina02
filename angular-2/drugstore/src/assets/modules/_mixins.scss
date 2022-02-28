@@ -6,3 +6,7 @@
     @content
   }
 };
+
+@mixin switchedBackgorund {
+  background-color: $yellow;
+}

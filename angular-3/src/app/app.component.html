@@ -1,1 +1,29 @@
-<p>app works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Material</th>
+      <th>Trade</th>
+      <th>Cost Code</th>
+      <th>Price</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list$ | async">
+      <td>{{ item.id }}</td>
+      <td>{{ item.material }}</td>
+      <td>{{ item.trade }}</td>
+      <td>{{ item.cost_code }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.active }}</td>
+      <td>
+        <div class="btn-group">
+          <button class="btn btn-danger" (click)="onDelete(item)">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

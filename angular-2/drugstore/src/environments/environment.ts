@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   // Cseréld ki a js4-002 részt a saját GitHub account azonosítódra,
   // pl.: https://nettuts.hu/jms/NorbikaKicsike/
-  apiUrl: 'https://nettuts.hu/jms/js4-002/',
+  apiUrl: 'https://nettuts.hu/jms/Sedina02/drugs',
 };
 /*
  * For easier debugging in development mode, you can import the following file
